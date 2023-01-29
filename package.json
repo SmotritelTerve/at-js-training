@@ -1,4 +1,5 @@
-{
+{ 
+  "type": "module",
   "name": "at-js-training",
   "version": "1.0.0",
   "description": "unit testing",

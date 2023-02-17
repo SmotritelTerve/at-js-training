@@ -104,4 +104,8 @@ dist
 .tern-port
 
 # Test results report
-mochawesome-report/
+mochawesome-report
+
+#husky
+
+.husky

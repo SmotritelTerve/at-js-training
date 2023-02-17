@@ -5,7 +5,8 @@
   "description": "unit testing",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "coverage": "c8 npm test"
   },
   "repository": {
     "type": "git",

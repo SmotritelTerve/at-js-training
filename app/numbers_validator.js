@@ -35,11 +35,27 @@ export class NumbersValidator {
  */
   getEvenNumbersFromArray(arrayOfNumbers) {
     if (Array.isArray(arrayOfNumbers) &&
-    arrayOfNumbers.every((item) => typeof item == 'number')) {
+      arrayOfNumbers.every((item) => typeof item == 'number')) {
       const arrayOfEvenNumbers = arrayOfNumbers.filter(this.isNumberEven);
       return arrayOfEvenNumbers;
     } else {
       throw new Error(`[${arrayOfNumbers}] is not an array of "Numbers"`);
     }
+  };
+
+  /**
+ *
+ * @param {Array<Number>} arrayOfNumbers array of numbers to go through
+ * @return {Boolean} true if all are numbers
+ * @memberof NumbersValidator
+ */
+
+  // eslint-disable-next-line require-jsdoc
+  isAllNumbers(arrayOfNumbers) {
+    if (!Array.isArray(arrayOfNumbers)) {
+      throw new Error(`[${arrayOfNumbers}] is not an array`);
+    }
+    return arrayOfNumbers.every((n) => typeof n === 'number');
   }
-}
+};
+
